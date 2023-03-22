@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a{
@@ -18,14 +19,8 @@ ul{
     text-align: center;
     border: 1px solid #333;
 }
-li{
-    color: white;
-}
 
-li:hover{
-    background-color: white;
-    color: #333;
-}
 a:hover{
+    background-color: white;
     color: #333;
 }
