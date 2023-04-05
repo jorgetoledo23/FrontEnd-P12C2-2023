@@ -1,0 +1,74 @@
+body{
+    height: 99vh; display: flex;
+    align-items: center; justify-content: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width: 40%;
+    background-color: white; border-radius: 20px;
+    padding: 20px;
+}
+h2{
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+}
+form > div {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+form input{
+    outline: 0;
+    border-width: 0 0 2px 0;
+    border-color: black;
+    padding: 5px;
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+#btn{
+    padding: 10px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    color: white;
+    border-radius: 20px;
+    border-width: 0 0 0 0;
+}
+
+
+@media (max-width: 600px){
+    .container{
+        width: 90%;
+        height: 300px;
+        background-color: white;
+        border-radius: 20px;
+    }
+}
+
+
+input[type=text], input[type=password]{
+    border: 1px solid red;
+}
+
+form > input {
+    border: 1px solid blue;
+}
+
+input[type=submit]{
+    /* selecciona inputs de tipo submit (boton)*/
+}
+
+#btnLogin {
+    /* selecciona el elemento con el id="btnLogin" */
+}
+.btn{
+    /* selecciona el(los) elemento(s) con la class btn */
+}
