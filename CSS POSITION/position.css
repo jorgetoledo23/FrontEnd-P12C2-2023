@@ -17,5 +17,19 @@
 #static{
     background-color: burlywood;
     height: 100px;
+}
 
+#fixed{
+    background-color: aquamarine;
+    height: 100px;
+}
+
+#relative{
+    background-color: cadetblue;
+    height: 100px;
+}
+
+#absolute{
+    background-color:darkgoldenrod;
+    height: 100px;
 }
