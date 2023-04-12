@@ -17,19 +17,48 @@
 #static{
     background-color: burlywood;
     height: 100px;
+
+    position: static;
 }
 
 #fixed{
     background-color: aquamarine;
     height: 100px;
+
+    position: fixed;
+    top: 100px;
+    bottom: 100px;
+
+    left: 100px;
+    right: 100px;
+
+    z-index: 9999;
+
 }
 
 #relative{
     background-color: cadetblue;
     height: 100px;
+    position: relative;
+
+    bottom: 10px;
+    right: 10px;
+
 }
 
 #absolute{
     background-color:darkgoldenrod;
     height: 100px;
+
+    position: absolute;
+
+    top: 10px;
+    left: 10px;
+
+}
+
+#padre{
+    position: relative;
+    background-color: black;
+    height: 150px;
 }
