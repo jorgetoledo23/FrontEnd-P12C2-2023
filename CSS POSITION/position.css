@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+
+    width: 90%;
+    height: 200vh;
+
+    margin: auto;
+    border: 1px solid red;
+
+}
+
+#static{
+    background-color: burlywood;
+    height: 100px;
+
+}
