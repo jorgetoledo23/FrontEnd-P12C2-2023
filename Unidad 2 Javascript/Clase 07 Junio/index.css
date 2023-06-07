@@ -12,18 +12,22 @@ img {
     left: 0px;
     right: 0px;
     margin: auto;
-
-
     width: 80%;
     height: 0vh;
     background-color: aquamarine;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-
     transition: 1s;
-
 }
 
 #carroProductContainer{
     display: none;
+}
+
+.btnEliminar{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 10px;
+    margin: auto;
 }
