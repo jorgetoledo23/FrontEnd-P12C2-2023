@@ -20,8 +20,14 @@ const products = [
         "Descripcion": "Microsoft Xbox Series S",
         "Precio": 345678,
         "UrlImagen": "https://media.solotodo.com/media/products/1263786_picture_1604618116.jpg"
-    },
+    }
 ]
+const toCLP = new Intl.NumberFormat('es-CL', {
+    style: 'currency',
+    currency: 'CLP'
+})
+toCLP.format(100000000)
+
 
 const productContainer = document.getElementById('productContainer')
 
@@ -30,10 +36,34 @@ const loadProducts = () =>{
     products.forEach(P => {
     
         const divProducto = document.createElement('div')
-        divProducto.classList.add('card', 'text-center', 'p-2', 'm-2')
+        divProducto.classList.add('card', 'text-center', 'p-2', 'm-2', 'col-md-3')
         divProducto.id = P.Cod
-        divProducto.innerText = P.Cod
+        
+        const descProducto = document.createElement('p')
+        descProducto.classList.add('card-title')
+        descProducto.innerText = P.Descripcion
 
+        const imgProducto = document.createElement('img')
+        imgProducto.src = P.UrlImagen
+        imgProducto.classList.add('d-block', 'mx-auto', 'm-2')
+        imgProducto.width = "150"
+        imgProducto.height = "150"
+
+        const precioProducto = document.createElement('p')
+        precioProducto.classList.add('card-title', 'm-2', 'p-2')
+        precioProducto.innerHTML = '<strong>' + toCLP.format(P.Precio) + '</strong>'
+
+        const btnProducto = document.createElement('button')
+        btnProducto.classList.add('btn', 'btn-primary', 'm-2', 'p-2', 'col-3', 'mx-auto')
+        btnProducto.innerHTML = '<i class="fa-solid fa-cart-plus"></i>'
+
+
+
+
+        divProducto.appendChild(descProducto)
+        divProducto.appendChild(imgProducto)
+        divProducto.appendChild(precioProducto)
+        divProducto.appendChild(btnProducto)
 
         productContainer.appendChild(divProducto)
     })
