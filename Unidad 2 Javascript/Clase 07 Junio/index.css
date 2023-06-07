@@ -4,4 +4,26 @@ img {
     max-height:95px;
     width: auto;
     height: auto;
-  }
+}
+
+#carroContainer{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+
+
+    width: 80%;
+    height: 0vh;
+    background-color: aquamarine;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    transition: 1s;
+
+}
+
+#carroProductContainer{
+    display: none;
+}

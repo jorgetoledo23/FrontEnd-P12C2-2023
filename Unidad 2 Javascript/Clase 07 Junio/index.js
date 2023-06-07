@@ -26,7 +26,17 @@ const toCLP = new Intl.NumberFormat('es-CL', {
     style: 'currency',
     currency: 'CLP'
 })
-toCLP.format(100000000)
+
+const btnOpenCart = document.getElementById('btnOpenCart')
+const carroContainer = document.getElementById('carroContainer')
+btnOpenCart.addEventListener('click', ()=>{
+    if(carroContainer.style.height == "90vh"){
+        carroContainer.style.height = "0vh"
+    }else{
+        carroContainer.style.height = "90vh"
+    }
+})
+
 
 
 const productContainer = document.getElementById('productContainer')
