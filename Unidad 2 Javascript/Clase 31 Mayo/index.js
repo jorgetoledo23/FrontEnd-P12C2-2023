@@ -3,7 +3,8 @@ const numeros = [
     2,
     3,
     4,
-    5
+    5,
+    6
 ]
 
 numeros.forEach(num => {
