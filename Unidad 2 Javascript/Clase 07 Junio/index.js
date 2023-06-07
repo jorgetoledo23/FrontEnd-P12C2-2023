@@ -36,7 +36,7 @@ const loadProducts = () =>{
     products.forEach(P => {
     
         const divProducto = document.createElement('div')
-        divProducto.classList.add('card', 'text-center', 'p-2', 'm-2', 'col-md-3')
+        divProducto.classList.add('card', 'text-center', 'p-2', 'col-md-3')
         divProducto.id = P.Cod
         
         const descProducto = document.createElement('p')
@@ -54,7 +54,7 @@ const loadProducts = () =>{
         precioProducto.innerHTML = '<strong>' + toCLP.format(P.Precio) + '</strong>'
 
         const btnProducto = document.createElement('button')
-        btnProducto.classList.add('btn', 'btn-primary', 'm-2', 'p-2', 'col-3', 'mx-auto')
+        btnProducto.classList.add('btn', 'btn-primary', 'm-2', 'p-2', 'col-5', 'mx-auto')
         btnProducto.innerHTML = '<i class="fa-solid fa-cart-plus"></i>'
 
 
