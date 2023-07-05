@@ -1,11 +1,29 @@
 import Card from './components/Card'
 import Navbar from './components/Navbar'
+import data from './data.json'
+import Product from './components/Product';
+import Carro from './components/Carro';
+import { useState } from 'react';
+
 export default function App() {
+  
+  const [visible, setVisible] = useState(false)
+
+  const fToggleCarro = () =>{
+    setVisible(!visible)
+  }
+  
   return (
     <div id="divPadre" >
-      <Navbar />
-      <Card titulo="18.3.0" desc="Version Estable" importante={true}/>
-      <Card titulo="20.3.1" desc="Version mas Nueva" importante={false}/>
+      <Navbar fToggleCarro={fToggleCarro} />
+      <Carro visible={visible} />
+
+      <div className='row justify-content-evenly m-5'>
+      {data.map(P => <Product key={P.Cod} Producto={P} />)}
+      </div>
+      
+
+
     </div>
   );
 }

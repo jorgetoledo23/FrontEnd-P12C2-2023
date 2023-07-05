@@ -1,0 +1,26 @@
+[
+{
+    "Cod" : "1",
+    "Desc" : "iPhone 14 Pro Max",
+    "UrlImagen" : "https://d3tctca4ed2xlu.cloudfront.net/images/spree/images/1815931/attachments/large/Apple_iPhone_14_Pro_Max_Negro_Espacial_1.jpg",
+    "Stock" : 100,
+    "Precio" : 1999990
+},
+{
+    "Cod" : "2",
+    "Desc" : "MAC 14",
+    "UrlImagen" : "https://d3tctca4ed2xlu.cloudfront.net/images/spree/images/2308534/attachments/large/Apple_MacBook_Pro_14_in_Space_Gray_1.jpg",
+    "Stock" : 100,
+    "Precio" : 1999990
+}
+,
+{
+    "Cod" : "2",
+    "Desc" : "MAC 14",
+    "UrlImagen" : "https://d3tctca4ed2xlu.cloudfront.net/images/spree/images/2308534/attachments/large/Apple_MacBook_Pro_14_in_Space_Gray_1.jpg",
+    "Stock" : 100,
+    "Precio" : 1999990
+}
+
+
+]
