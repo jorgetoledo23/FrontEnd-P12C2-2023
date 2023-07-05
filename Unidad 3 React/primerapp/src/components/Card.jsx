@@ -1,17 +1,22 @@
-export default function Card( { titulo, desc} ) {
-    
+export default function Card( { titulo, desc, importante} ) {
     const estilos = {
-        backgroundColor : "green",
-        borderRadius : "10px",
-        padding : "5px",
-        margin : "20px",
-        color : "#fff",
-        textAlign : "center"
+        main : {
+            backgroundColor : importante ? "red" : "green",
+            borderRadius : "10px",
+            padding : "5px",
+            margin : "20px",
+            color : "#fff",
+            textAlign : "center"
+        },
+        titulo : {
+            fontSize : "2rem"
+        },
+        desc : {}
+        
     }
-    
-    
-    return <div style={estilos}>
-        <h3>{titulo}</h3>
+
+    return <div style={estilos.main}>
+        <h3 style={estilos.titulo}>{titulo}</h3>
         <p>{desc}</p>
     </div>
 }
