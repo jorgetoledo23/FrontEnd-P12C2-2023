@@ -14,7 +14,6 @@ export default function Carro({visible}) {
                 <p>12312312</p>
                 <p>1</p>
             </div>
-
         </div>
     </div>
 
